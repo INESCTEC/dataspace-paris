@@ -1,0 +1,46 @@
+/*
+* Participant to Test the Insert
+* */
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "idsc": "https://w3id.org/idsa/code/"
+  },
+  "@type": "ids:Participant",
+  "@id": "https://stvgodigital/inesctec/autogen/participant/0f550ce6-cb93-4cce-b55e-6c9376e870ff-4",
+  "ids:version": "1.1",
+  "ids:description": [
+    {
+      "@value": "Producer",
+      "@type": "http://w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:legalName": [
+      "Participant 0f550ce6-cb93-4cce-b55e-6c9376e870ff-4"
+    ],
+  "ids:corporateEmailAddress": [
+    "producer@inesctec.pt",
+    "producer_1@inesctec.pt"
+  ],
+  "ids:primarySite": {
+    "@type": "ids:Site",
+    "@id": "https://w3id.org/idsa/autogen/site/6a90dc0b-9902-460c-90f9-5a6a8766b3a9-4",
+    "ids:siteAddress": "http://example.com/primarySite"
+  },
+  "ids:participantCertification": {
+    "@type": "ids:ParticipantCertification",
+    "@id": "https://w3id.org/idsa/autogen/participantCertification/b9fc7454-155b-4dd6-b7db-1d144d520ca31",
+    "ids:certificationLevel": {
+      "properties": null,
+      "@id": "https://w3id.org/idsa/code/PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK"
+    }
+  },
+  "ids:title": [
+    {
+      "@value": "Producer 1",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:corporateHomepage": "http://examplepage.com",
+  "ids:legalForm": "dummyLegalForm"
+}

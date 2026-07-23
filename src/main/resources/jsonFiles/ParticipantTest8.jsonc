@@ -1,0 +1,46 @@
+/*
+   * Should fail on ids:corporateHomepage
+   * AND on certificationLevel
+   * */
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "idsc": "https://w3id.org/idsa/code/"
+  },
+  "@type": "ids:Participant",
+  "@id": "https://inesctec/ids/participant/id/test8",
+  "ids:version": "1.1",
+  "ids:description": [
+    {
+      "@value": "Producer",
+      "@type": "http://w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:corporateEmailAddress": [
+    "producer@inesctec.pt",
+    "producer_1@inesctec.pt"
+  ],
+  "ids:primarySite": {
+    "@type": "ids:Site",
+    "@id": "https://inesctec/ids/site/id/test8",
+    "ids:siteAddress": "http://example.com/primarySite"
+  },
+  "ids:participantCertification": {
+    "@type": "ids:ParticipantCertification",
+    "@id": "https://inesctec/ids/participantCertification/id/test8",
+    "ids:certificationLevel": {
+      "@type": "ids:ParticipantCertificationLevel",
+      "@id": "idsc:PARTICIPANT_ENTRY_LEVEL_SELF_ASSESSMENT"
+    }
+  },
+  "ids:title": [
+    {
+      "@value": "Producer 1",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:corporateHomepage": {
+    "@id": "http://examplepage.com"
+  },
+  "ids:legalForm": "dummyLegalForm"
+}

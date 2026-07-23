@@ -1,0 +1,48 @@
+{
+  "@type": "ids:Participant",
+  "@id": "https://w3id.org/idsa/autogen/participant/cd0737ab-5ff7-4a6a-8350-4f2d41e7b972",
+  "ids:version": "3.0",
+  "ids:description": [
+    {
+      "@value": "Fraunhofer Institute for Intelligent Analysis and Information Systems IAIS based in Sankt Augustin near Bonn is one of the leading scientific institutes in the fields of Artificial Intelligence, Machine Learning and Big Data in Germany and Europe.",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:title": [
+    {
+      "@value": "Fraunhofer IAIS",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:vatID": null,
+  "ids:primarySite": {
+    "@type": "ids:Site",
+    "@id": "https://w3id.org/idsa/autogen/site/95998886-0509-4915-a433-8c4c14d2b12b",
+    "ids:siteAddress": "Fraunhofer-Institut für Intelligente Analyse- und Informationssysteme IAIS, Schloss, 53757 Sankt Augustin"
+  },
+  "ids:legalForm": "e.V.",
+  "ids:legalName": [
+    "LegalName"
+  ],
+  "ids:participantCertification": {
+    "@type": "ids:ParticipantCertification",
+    "@id": "https://w3id.org/idsa/autogen/participantCertification/f90a2e1b-e0c1-43c5-a9b8-3cbe5c44e50d",
+    "ids:version": null,
+    "ids:description": [],
+    "ids:title": [],
+    "ids:evaluationFacility": null,
+    "ids:certificationLevel": {
+      "properties": null,
+      "@id": "https://w3id.org/idsa/code/PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK"
+    },
+    "ids:lastValidDate": "2021-06-30T00:00:00.000",
+    "ids:membershipEnd": null
+  },
+  "ids:corporateHomepage": "https://www.iais.fraunhofer.de/",
+  "ids:corporateEmailAddress": [
+    "contact@ids.fraunhofer.de"
+  ],
+  "ids:participantRefinement": null,
+  "ids:businessIdentifier": [],
+  "ids:jurisdiction": null
+}

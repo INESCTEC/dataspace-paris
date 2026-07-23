@@ -1,0 +1,47 @@
+/*
+ * Participant does not have MemberPerson, EvaluationFacility, MemberParticipant, vat,
+ * participantRefinement, businessIdentifier, jurisdiction
+ * */
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "idsc": "https://w3id.org/idsa/code/"
+  },
+  "@type": "ids:Participant",
+  "@id": "https://inesctec/ids/participant/id/test3",
+  "ids:version": "1.1",
+  "ids:description": [
+    {
+      "@value": "Producer",
+      "@type": "http://w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:legalName": [
+    "test3"
+  ],
+  "ids:corporateEmailAddress": [
+    "producer@inesctec.pt",
+    "producer_1@inesctec.pt"
+  ],
+  "ids:primarySite": {
+    "@type": "ids:Site",
+    "@id": "https://inesctec/ids/site/id/test3",
+    "ids:siteAddress": "http://example.com/primarySite"
+  },
+  "ids:participantCertification": {
+    "@type": "ids:ParticipantCertification",
+    "@id": "https://inesctec/ids/participantCertification/id/test3",
+    "ids:certificationLevel": {
+      "properties": null,
+      "@id": "https://w3id.org/idsa/code/PARTICIPANT_ENTRY_LEVEL_SELF_ASSESSMENT"
+    }
+  },
+  "ids:title": [
+    {
+      "@value": "Producer 1",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:corporateHomepage": "http://examplepage.com",
+  "ids:legalForm": "dummyLegalForm"
+}

@@ -1,0 +1,24 @@
+services:
+    postgres:
+        image: postgres:14.4
+        container_name: 'paris-postgres'
+        ports:
+          - '5432:5432'
+        environment:
+            - 'PGPORT=5432'
+            - 'POSTGRES_USER=postgres'
+            - 'POSTGRES_PASSWORD=password'
+            - 'POSTGRES_DB=participant'
+        networks:
+            - certis
+        volumes:
+            - 'paris:/var/lib/postgresql/data'
+        restart: always
+
+networks:
+    certis:
+        driver: bridge
+        
+volumes:
+    paris:
+

@@ -1,0 +1,53 @@
+Release: 2.1.3
+  - Fix the sessionID login bug
+
+Release: 2.1.2
+  - Remove participant update. the insert already supports adding another version of a Participant
+
+Release: 2.1.1
+  - Fix bug where the connection between the connector and the participant was being overrided when adding a list of participants and removing a participant associated with a connector that has multiple participants
+  - Fix bug where, when updating a participant with no refinement, it was returning null
+
+Release: 2.1.0
+  - Allow adding a version of a participant
+  - Make the participant description a list
+
+Release: 2.0.3
+  - Allow the creation and association of Participants and Connectors
+  - Update the Participant
+  - Differentiate between Connector and Participant certificate
+
+Release: 2.0.2
+  - Replace BaseConnector with ParIS on configuration file (i.e., config.json)
+  - Replace IDSA Maven project with INESCTEC Maven project
+
+Release: 2.0.1
+  - Add a Controller to add a Participant and a Connector at the same time (i.e., ParticipantFraunDto)
+  - Add Endpoints to add and remove a Participant title
+  - Add an Endpoint to retrieve a Connector using the ConnectorIDSEndpoint
+
+Release: 2.0.0
+  - Fix the encoding error that the accents generated. Now, characters like 'ç' can be used and will not be desconfigure
+  - Fix the error when adding Participant, if the dates had UTC
+  - Convert all LocalDateTime's into ZonedDateTime
+  - Change Participant and Person to a ManyToMany relationship
+  - Add methods to Associate a Connector and a Participant
+  - On the ConnectorController add the necessary CRUD operations
+  - Add Participant Removal
+
+Release: 1.0.1
+  - Add the Update endpoint for the Connectors
+  - Add endpoint to, given a ConnectorID, list the Participant that it belongs to
+  - Change data model to allow a Connector to belong to multiple Participants
+  - Add method to remove a Participant on the Swagger UI
+
+Release: 1.0.0
+  - Update DataLoader to use real data
+  - Add a DataLoader for the test classes
+  - Add a Business Identifier Model to save the organisation (i.e., participant) activity sector
+
+Release: 0.9.0
+  - Add QueryMessageHander
+       - Add SQL parser to distinguish between Connector and Participant on the Query Message
+  - Add docker-compose for a local deployment
+  - Remove the memberParticipant from the database

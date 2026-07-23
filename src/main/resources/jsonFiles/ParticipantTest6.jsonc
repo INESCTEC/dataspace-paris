@@ -1,0 +1,115 @@
+/*
+   * Participant:
+   *    - has MemberPerson with all a null, except id
+   *    - Does not have:
+   *              - EvaluationFacility, MemberParticipant, vat, legalName,
+   *              - businessIdentifier, jurisdiction
+   *    - Has participantRefinement: Constraint  and Logical Constraint at OR
+   * */
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "idsc": "https://w3id.org/idsa/code/"
+  },
+  "@type": "ids:Participant",
+  "@id": "https://inesctec/ids/participant/id/test6",
+  "ids:version": "3.0",
+  "ids:memberPerson": [
+    {
+      "@type": "ids:Person",
+      "@id": "https://inesctec/ids/person/id/test6",
+      "ids:phoneNumber": [
+        null
+      ],
+      "ids:homepage": null,
+      "ids:familyName": null,
+      "ids:givenName": null,
+      "ids:emailAddress": null
+    }
+  ],
+  "ids:participantCertification": {
+    "@type": "ids:ParticipantCertification",
+    "@id": "https://inesctec/ids/participantCertification/id/test6",
+    "ids:version": "3.0",
+    "ids:description": [],
+    "ids:title": [],
+    "ids:evaluationFacility": {
+          "@type": "ids:EvaluationFacility",
+          "@id": "https://evaluation/facility/ids/id/facility-04"
+        },
+    "ids:certificationLevel": {
+      "properties": null,
+      "@id": "https://w3id.org/idsa/code/PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK"
+    },
+    "ids:lastValidDate": "2022-03-23T12:23:22.000",
+    "ids:membershipEnd": "2025-03-23T12:23:22.000"
+  },
+  "ids:corporateEmailAddress": [
+    "subcontracted@inesctec.pt"
+  ],
+  "ids:corporateHomepage": "http://www.stvgodigital.pt",
+  "ids:participantRefinement": {
+    "@type": "ids:LogicalConstraint",
+    "@id": "https://inesctec/ids/logicalConstraint/id/test6",
+    "ids:or": [
+      {
+        "@type": "ids:Constraint",
+        "@id": "https://inesctec/ids/constraint/id/test6/1",
+        "ids:operator": {
+          "properties": null,
+          "@id": "https://w3id.org/idsa/code/EQUALS"
+        },
+        "ids:leftOperand": {
+          "properties": null,
+          "@id": "https://w3id.org/idsa/code/SECURITY_LEVEL"
+        },
+        "ids:rightOperand": {
+          "@value": "PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "ids:pipEndpoint": null,
+        "ids:rightOperandReference": null
+      },
+      {
+        "@type": "ids:Constraint",
+        "@id": "https://inesctec/ids/constraint/id/test6/2",
+        "ids:unit": "http://dbpedia.org/resource/Euro",
+        "ids:operator": {
+          "properties": null,
+          "@id": "https://w3id.org/idsa/code/EQUALS"
+        },
+        "ids:leftOperand": {
+          "properties": null,
+          "@id": "https://w3id.org/idsa/code/SECURITY_LEVEL"
+        },
+        "ids:rightOperand": {
+          "@value": "PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "ids:pipEndpoint": null,
+        "ids:rightOperandReference": "http://right/operand/reference/test"
+      }
+    ],
+    "ids:and": [],
+    "ids:xone": []
+  },
+  "ids:legalName": [
+    "Subcontracted 6"
+  ],
+  "ids:primarySite": {
+    "@type": "ids:Site",
+    "@id": "https://inesctec/ids/site/id/test6",
+    "ids:siteAddress": "Street X"
+  },
+  "ids:vatID": "12345",
+  "ids:legalForm": "e.V.",
+  "ids:businessIdentifier": [
+    {
+      "@type": "ids:BusinessIdentifier",
+      "@id": "https://inesctec/ids/businessIdentifier/id/test6",
+      "ids:identifierSystem": "CAE",
+      "ids:identifierNumber": "123456788"
+    }
+  ],
+  "ids:jurisdiction": "Portugal"
+}

@@ -1,0 +1,81 @@
+/*
+* Participant is complete, except for memberParticipant
+* */
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "idsc": "https://w3id.org/idsa/code/"
+  },
+  "@type": "ids:Participant",
+  "@id": "https://inesctec/ids/participant/id/test1",
+  "ids:version": "3.0",
+  "ids:description": [
+    {
+      "@value": "Participant called Subcontracted, with id https://inesctec/ids/participant/id/participant/test1",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:title": [
+    {
+      "@value": "Subcontracted 1",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:memberPerson": [
+    {
+      "@type": "ids:Person",
+      "@id": "https://inesctec/ids/person/id/test1",
+      "ids:phoneNumber": [
+        "923452876"
+      ],
+      "ids:homepage": "www.test.com",
+      "ids:familyName": "Doe2",
+      "ids:givenName": "John2",
+      "ids:emailAddress": [
+        "john.doe@gmail.com",
+        "john.doe@hotmail.com"
+      ]
+    }
+  ],
+  "ids:participantCertification": {
+    "@type": "ids:ParticipantCertification",
+    "@id": "https://inesctec/ids/participantCertification/id/test1",
+    "ids:version": "3.0",
+    "ids:description": [],
+    "ids:title": [],
+    "ids:evaluationFacility": {
+      "@type": "ids:EvaluationFacility",
+      "@id": "https://evaluation/facility/ids/id/facility-01"
+    },
+    "ids:certificationLevel": {
+      "properties": null,
+      "@id": "https://w3id.org/idsa/code/PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK"
+    },
+    "ids:lastValidDate": "2022-03-23T12:23:22.000",
+    "ids:membershipEnd": "2025-03-23T12:23:22.000"
+  },
+  "ids:corporateEmailAddress": [
+    "subcontracted@inesctec.pt"
+  ],
+  "ids:corporateHomepage": "http://www.stvgodigital.pt",
+  "ids:participantRefinement": null,
+  "ids:legalName": [
+    "Subcontracted 2"
+  ],
+  "ids:primarySite": {
+    "@type": "ids:Site",
+    "@id": "https://inesctec/ids/site/id/test1",
+    "ids:siteAddress": "Street X"
+  },
+  "ids:vatID": "1234567887",
+  "ids:legalForm": "e.V.",
+  "ids:businessIdentifier": [
+    {
+      "@type": "ids:BusinessIdentifier",
+      "@id": "https://inesctec/ids/businessIdentifier/id/test1",
+      "ids:identifierSystem": "CAE",
+      "ids:identifierNumber": "123456788"
+    }
+  ],
+  "ids:jurisdiction": "Portugal"
+}

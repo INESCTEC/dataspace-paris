@@ -1,0 +1,91 @@
+{
+  "participant": {
+    "@type": "ids:Participant",
+    "@id": "https://texpact.pt/ids/participant/id/producer-01",
+    "ids:version": "1.0",
+    "ids:participantCertification": {
+      "@type": "ids:ParticipantCertification",
+      "@id": "https://texpact.pt/ids/participant/certification/id/producer-01",
+      "ids:version": null,
+      "ids:lastValidDate": "2022-03-23T12:23:22.000UTC",
+      "ids:membershipEnd": "2025-03-23T12:23:22.000UTC",
+      "ids:certificationLevel": {
+        "properties": null,
+        "@id": "https://w3id.org/idsa/code/PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK"
+      },
+      "ids:evaluationFacility": {
+        "@type": "ids:EvaluationFacility",
+        "@id": "https://texpact.pt/ids/evaluation/facility/id/texpact"
+      },
+      "ids:description": [
+        {
+          "@value": "producer",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "ids:title": [
+        {
+          "@value": "producer",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    "ids:memberPerson": [
+      {
+        "@type": "ids:Person",
+        "@id": "https://texpact.pt/ids/person/id/xajwdewe-f9f8-4cc1-b144-cdff",
+        "ids:familyName": "Toscano",
+        "ids:givenName": "César",
+        "ids:emailAddress": [
+          "c.toscano@inesctec.pt"
+        ],
+        "ids:homepage": null,
+        "ids:phoneNumber": []
+      }
+    ],
+    "ids:businessIdentifier": [
+      {
+        "@type": "ids:BusinessIdentifier",
+        "@id": "https://texpact.pt/ids/businessIdentifier/id/producer-01",
+        "ids:identifierNumber": "businessIdentifierNumber",
+        "ids:identifierSystem": "businessIdentifierSystem"
+      }
+    ],
+    "ids:legalName": [
+      "producer inc."
+    ],
+    "ids:primarySite": {
+      "@type": "ids:Site",
+      "@id": "https://w3id.org/idsa/autogen/site/e3caab67-b207-435e-9f15-f627e5c54427",
+      "ids:siteAddress": "Street X"
+    },
+    "ids:corporateEmailAddress": [
+      "producer@inesctec.pt"
+    ],
+    "ids:corporateHomepage": "http://www.producer.pt",
+    "ids:vatID": "123456789",
+    "ids:jurisdiction": "Portugal",
+    "ids:legalForm": "e.V.",
+    "ids:participantRefinement": null,
+    "ids:description": [
+      {
+        "@value": "producer (fictitious company used by INESC TEC for testing purposes)",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "ids:memberParticipant": [],
+    "ids:title": [
+      {
+        "@value": "producer",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "connectors": [
+    {
+      "connectorUuid": "b5790c63-d2dc-4c98-9d62-a9ba56d5f8ff",
+      "connectorID": "https://texpact.pt/ids/connector/id/producer-01",
+      "connectorIdsEndpoint": "https://vcese11.inesctec.pt:8080/producer/api/ids/data"
+    }
+  ]
+}

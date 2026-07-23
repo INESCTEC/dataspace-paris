@@ -1,0 +1,101 @@
+/*
+     * Participant does not have MemberPerson, EvaluationFacility, MemberParticipant, vat,
+     * participantRefinement, legalName, businessIdentifier, jurisdiction
+     *
+     * HAS: ConnectorID
+     * */
+{
+  "participant": {
+    "@type": "ids:Participant",
+    "@id": "https://stvgodigital.pt/ids/participant/id/test9",
+    "ids:version": "3.0",
+    "ids:description": [
+      {
+        "@value": "Participant called test9, with id https://stvgodigital.pt/ids/participant/id/test9",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "ids:title": [
+      {
+        "@value": "test9",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "ids:participantCertification": {
+      "@type": "ids:ParticipantCertification",
+      "@id": "https://w3id.org/idsa/code/PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK",
+      "ids:version": "3.0",
+      "ids:description": [],
+      "ids:title": [],
+      "ids:lastValidDate": "2022-03-23T12:23:22.000UTC",
+      "ids:certificationLevel": {
+        "properties": null,
+        "@id": "https://w3id.org/idsa/code/PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK"
+      },
+      "ids:evaluationFacility": {
+        "@type": "ids:EvaluationFacility",
+        "@id": "https://evaluation/facility/ids/id/facility-01"
+      },
+      "ids:membershipEnd": "2025-03-23T12:23:22.000UTC"
+    },
+    "ids:memberPerson": [
+      {
+        "@type": "ids:Person",
+        "@id": "https://stvgodigital.pt/ids/person/id/test9",
+        "ids:emailAddress": [
+          "john.doe@gmail.com",
+          "john.doe@hotmail.com"
+        ],
+        "ids:familyName": "Doe2",
+        "ids:givenName": "John2",
+        "ids:phoneNumber": [
+          "923452876"
+        ],
+        "ids:homepage": "www.test.com"
+      }
+    ],
+    "ids:participantRefinement": {
+      "@type": "ids:Constraint",
+      "@id": "http://inesctec/constraint/id/01",
+      "ids:unit": "http://dbpedia.org/resource/Euro",
+      "ids:operator": {
+        "properties": null,
+        "@id": "https://w3id.org/idsa/code/EQUALS"
+      },
+      "ids:leftOperand": {
+        "properties": null,
+        "@id": "https://w3id.org/idsa/code/SECURITY_LEVEL"
+      },
+      "ids:rightOperand": {
+        "@value": "PARTICIPANT_MEMBER_LEVEL_CONTROL_FRAMEWORK",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "ids:pipEndpoint": null,
+      "ids:rightOperandReference": null
+    },
+    "ids:legalName": [
+      "test9"
+    ],
+    "ids:corporateEmailAddress": [
+      "test9@inesctec.pt"
+    ],
+    "ids:corporateHomepage": "http://www.stvgodigital.pt",
+    "ids:primarySite": {
+      "@type": "ids:Site",
+      "@id": "https://w3id.org/idsa/autogen/site/test9",
+      "ids:siteAddress": "Street X"
+    },
+    "ids:vatID": "123456788",
+    "ids:legalForm": "e.V.",
+    "ids:memberParticipant": [],
+    "ids:businessIdentifier": [],
+    "ids:jurisdiction": "Portugal"
+  },
+  "connectorIdsID": [
+    {
+      "connectorUuid": "20bcebe2-694e-49c5-b2d9-8070e5b09c69",
+      "connectorID": "https://stvgodigital.pt/ids/connector/id/test9",
+      "connectorIdsEndpoint": "https://vcese12.inesctec.pt:8080/test9/api/ids/data"
+    }
+  ]
+}
