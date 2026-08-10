@@ -8,6 +8,23 @@ Run the command 'mvnw clean test' on the command line.
 
 ## Getting started
 
+At startup, ParIS always checks the filesystem directory configured by
+`PARTICIPANTS_IMPORT_DIRECTORY` and imports every `.json` and `.jsonc` file it
+finds. The default for local execution is `./populatingDatabase`. If the
+directory is absent or empty, no participant is imported. Files may contain
+either a raw IDS Participant or the
+`{ "participant": ..., "connectors": [...] }` structure. Already-imported
+participant versions are skipped.
+
+The Docker image defaults to `/data/participants`. A future Compose service can
+mount a host directory read-only:
+
+```yaml
+services:
+  paris:
+    volumes:
+      - ./populatingDatabase:/data/participants:ro
+```
 
 ## Common errors:
 

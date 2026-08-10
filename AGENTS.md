@@ -86,7 +86,7 @@ The code uses a conventional layered Spring structure:
   security, and IDS settings.
 - `src/main/resources/conf/configmodel.json`: IDS connector configuration.
 - `src/main/resources/jsonFiles`: participant JSON examples and fixtures.
-- `src/main/resources/ParticipantsToInsert`: participant insertion examples.
+- `src/main/resources/populatingDatabase`: participant insertion.
 - `docker/postgres/docker-compose.yml`: local PostgreSQL service.
 - `Dockerfile`: Java 21 runtime image for the packaged application.
 - `CHANGELOG`: release history.

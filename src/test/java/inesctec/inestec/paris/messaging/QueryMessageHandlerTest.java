@@ -176,7 +176,7 @@ class QueryMessageHandlerTest {
       });
 
       assertFalse(receivedParticipants.isEmpty());
-      assertEquals(receivedParticipants.size(), 2);
+      assertEquals(receivedParticipants.size(), 4);
 
     } catch (SerializeException | MessageHandlerException e) {
       throw new RuntimeException(e);
