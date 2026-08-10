@@ -168,9 +168,7 @@ class QueryMessageHandlerTest {
           assertTrue(Objects.equals(receivedPart.getParticipantCertification(), part_Op.get().getParticipantCertification()));
           assertTrue(Objects.equals(receivedPart.getPrimarySite(), part_Op.get().getPrimarySite()));
           assertTrue(Objects.equals(receivedPart.getVatID(), part_Op.get().getVatID()));
-          assertEquals( //It needs to be a DTO because of the databaseIDs
-              receivedPart.getBusinessIdentifier().toString(),
-              part_Op.get().getBusinessIdentifier().toString());
+          assertTrue(CompareUtil.compareDBBusinessIdentifiers(receivedPart.getBusinessIdentifier(), part_Op.get().getBusinessIdentifier()));
           assertTrue(Objects.equals(receivedPart.getRegistryCourt(), part_Op.get().getRegistryCourt()));
           assertTrue(Objects.equals(receivedPart.getLegalForm(), part_Op.get().getLegalForm()));
           assertEquals(receivedPart.getVersion(), part_Op.get().getVersion());
