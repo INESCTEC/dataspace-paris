@@ -33,7 +33,7 @@ class CertificateTest {
 
   @Mock
   Environment env;
-  final String directoryPass=".\\docker\\local\\certificate-authority\\cert";
+  final String directoryPass="src/main/resources/certificates";
 
   @Autowired
   EntityService service;

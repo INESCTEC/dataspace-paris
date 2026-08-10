@@ -77,7 +77,7 @@ class EntityServiceTest {
             "  ]\n" +
             "}";
     String separator = FileSystems.getDefault().getSeparator();
-    final String ca_path = ".\\docker\\local\\certificate-authority\\cert";
+    final String ca_path = "src/main/resources/certificates";
 
 
     @Test

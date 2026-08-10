@@ -18,7 +18,7 @@ import inesctec.inestec.paris.service.EntityService;
 
 class CertificatesDirectoryTest {
 
-  final String directoryPass = ".\\docker\\local\\certificate-authority\\cert";
+  final String directoryPass = "src/main/resources/certificates";
 
   final String directoryNotExist = "//wsl$/Ubuntu-20.04/home/ana/certificate-authority/ids-certificate-authority/data/cert1";
 
