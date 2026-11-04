@@ -9,7 +9,7 @@ docker image remove docker-registry.inesctec.pt/ids/paris-inesctec:2.2
 docker image remove docker-registry.inesctec.pt/ids/paris-inesctec:2.2.1
 
 # build local docker image (minor version)
-docker image build --pull --tag docker-registry.inesctec.pt/ids/paris-inesctec:2.2 .
+docker image build --no-cache --provenance=false --pull build --pull --tag docker-registry.inesctec.pt/ids/paris-inesctec:2.2 .
 
 # send local docker image to repository (minor version)
 docker push docker-registry.inesctec.pt/ids/paris-inesctec:2.2
