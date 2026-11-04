@@ -2,7 +2,7 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -60,7 +60,7 @@
     <!-- Build info -->
     <java.version>21</java.version>
     <maven.compiler.release>${java.version}</maven.compiler.release>
-    <maven.minimum.version>3.6.3</maven.minimum.version>
+    <maven.minimum.version>3.8.9</maven.minimum.version>
 
     <!-- IDS Dependencies -->
     <idscp2.version>0.18.0</idscp2.version>
@@ -69,30 +69,30 @@
     <!-- Dependencies -->
     <spring.starter.security>3.1.1</spring.starter.security>
     <springdoc.version>1.8.0</springdoc.version>
-    <swagger.version>1.6.14</swagger.version>
-    <lombok.version>1.18.32</lombok.version>
+    <swagger.version>1.6.16</swagger.version>
+    <lombok.version>1.18.48</lombok.version>
     <gson.version>2.11.0</gson.version>
-    <assertj.version>3.26.0</assertj.version>
-    <commons-collections4.version>4.4</commons-collections4.version>
-    <commons-codec.version>1.17.0</commons-codec.version>
+    <assertj.version>3.27.7</assertj.version>
+    <commons-collections4.version>4.6.0</commons-collections4.version>
+    <commons-codec.version>1.23.0</commons-codec.version>
     <jsonwebtoken.version>0.11.5</jsonwebtoken.version>
     <jsqlparser.version>4.6</jsqlparser.version>
 
     <!-- Databases -->
-    <postgres.version>42.7.3</postgres.version>
-    <h2.version>2.2.224</h2.version>
+    <postgres.version>42.7.14</postgres.version>
+    <h2.version>2.5.252</h2.version>
 
     <!-- Plugins -->
-    <maven-install-plugin.version>3.1.2</maven-install-plugin.version>
-    <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-    <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
-    <maven-surefire-plugin.version>3.3.0</maven-surefire-plugin.version>
-    <maven-failsafe-plugin.version>3.3.0</maven-failsafe-plugin.version>
-    <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
-    <maven-site-plugin.version>4.0.0-M15</maven-site-plugin.version> 
-    <versions-maven-plugin.version>2.17.0</versions-maven-plugin.version>
-    <spotbugs.version>4.8.6</spotbugs.version>
-    <spotbugs-maven-plugin>4.8.6.1</spotbugs-maven-plugin>
+    <maven-install-plugin.version>3.2.0</maven-install-plugin.version>
+    <maven-compiler-plugin.version>3.16.0</maven-compiler-plugin.version>
+    <maven-enforcer-plugin.version>3.7.0</maven-enforcer-plugin.version>
+    <maven-surefire-plugin.version>3.6.1</maven-surefire-plugin.version>
+    <maven-failsafe-plugin.version>3.6.1</maven-failsafe-plugin.version>
+    <maven-jar-plugin.version>3.5.1</maven-jar-plugin.version>
+    <maven-site-plugin.version>4.0.0-M16</maven-site-plugin.version> 
+    <versions-maven-plugin.version>2.23.0</versions-maven-plugin.version>
+    <spotbugs.version>4.10.5</spotbugs.version>
+    <spotbugs-maven-plugin>4.10.5.0</spotbugs-maven-plugin>
     <findsecbugs-plugin.version>1.12.0</findsecbugs-plugin.version>
 
     <!-- License -->
