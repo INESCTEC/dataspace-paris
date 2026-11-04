@@ -1,14 +1,13 @@
-FROM maven:3.8-eclipse-temurin:21-jdk-jammy AS builder
+FROM maven:3.8-eclipse-temurin:25-jdk-noble AS builder
 # copy the pom and src code to the container
 COPY ./ ./
 # package our application code
 RUN mvn clean package install -DskipTests=true
 
 
-FROM eclipse-temurin:21-jdk-jammy
+FROM eclipse-temurin:25-jdk-noble
 VOLUME /tmp
 ENV PARTICIPANTS_IMPORT_DIRECTORY=/data/participants
 # copy only the artifacts we need from the first stage and discard the rest
 COPY --from=builder /target/*.jar /app.jar
 CMD ["java", "-jar", "/app.jar"]
-
