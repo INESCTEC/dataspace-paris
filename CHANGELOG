@@ -1,3 +1,6 @@
+Release: 2.2.1
+  - Upgraded dependencies
+
 Release: 2.2.0
   - Add participants insertion from docker bind mount or resources folder
 
